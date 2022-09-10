@@ -1,0 +1,161 @@
+/*.container {
+
+    position: relative;
+    width: 200px;
+
+  }
+.semitrans {
+
+    background-image: url(../public/pizza.jfif);
+    background-size: cover;
+    opacity: 0.6;
+    filter:alpha(opacity=60);
+
+}
+
+.hello {
+    width: 100%; height: 100px;
+    position: absolute;
+    top: 20px; left: 20px;
+  }
+
+*/
+
+.container {
+    position: relative;
+    height: 45rem;
+  }
+  
+  .semitrans {
+    width: 100%;
+     height: 45rem;
+    background-image: url('/pizza.jfif');
+    background-size: cover;
+    opacity: 0.2;
+
+    background-repeat: no-repeat;
+  }
+  
+  .hello {
+
+    position: absolute;
+    top: 10px; 
+    left: 10rem;
+    display: flex;
+    flex-direction: row;
+
+    justify-content:space-between;
+    align-items: flex-end;
+    padding: 10px;
+
+
+  }
+  .hello img{
+    width: 80px;
+
+  }
+
+  .hello1 {
+
+    display: flex;
+    align-items:center;
+    position: absolute;
+    top: 10px; 
+    right: 20rem;
+    color: white;
+    padding: 10px;}
+
+    .text{
+      margin-left: 5rem;
+      font-size: large;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: bold;
+    }
+
+    .mid{
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      left: 32rem;
+      top:20rem;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .midmenu{
+      font-family: 'Times New Roman', Times, serif;
+      position: absolute;
+      font-weight:bold;
+      font-size:4rem;
+      left: 38rem;
+      top:10rem;
+      color: white;
+
+    }
+
+    .mid p{
+      font-size: 1.7rem;
+      color: white;
+      text-align: center;
+    }
+
+    .mid h1{
+      font-weight:bolder;
+      font-size:4rem;
+      color: white;
+    }
+
+    .mid button{
+      background-color: rgb(149, 27, 27);
+      color: white;
+      border-radius: 30%;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1rem;
+    }
+
+
+    .arrowContainer {
+      position: absolute;
+      width: 10%;
+      height: 20%;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    @media screen and (max-width: 480px) {
+      .hello {
+        left:0px
+      }
+    
+      .hello1 {
+        display: none;
+      }
+
+      .mid{
+        left:0px;
+        top: 10rem;
+      }
+
+      .midmenu{
+        left: 3rem;
+        top: 5rem
+      }
+
+
+    
+      .price,
+      .desc {
+        font-size: 24px;
+      }
+    }
+
+    @media screen and (-webkit-min-device-pixel-ratio:0)
+and (min-resolution:.001dpcm) {
+.semitrans{ opacity:0.8; }
+}
