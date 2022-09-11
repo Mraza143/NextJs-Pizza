@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "../styles/Navbar.module.css";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -15,18 +16,16 @@ const Navbar = () => {
       </div>
       <div className={styles.item}>
         <ul className={styles.list}>
-          <li className={styles.listItem}>Homepage</li>
-          <li className={styles.listItem}>Products</li>
-          <li className={styles.listItem}>Menu</li>
-          <Image src="/vercel.svg" alt="" width="160px" height="69px" />
-          <li className={styles.listItem}>Events</li>
-          <li className={styles.listItem}>Blog</li>
-          <li className={styles.listItem}>Contact</li>
+          <Link href="/">
+          <li className={styles.listItem}>Homepage</li></Link>
+          <li className={styles.listItem}>Pizzas</li>
+          <li className={styles.listItem}>Deals</li>
+
         </ul>
       </div>
       <div className={styles.item}>
         <div className={styles.cart}>
-          <Image src="/vercel.svg" alt="" width="30px" height="30px" />
+          <Image src="/cart.png" alt="" width="30px" height="30px" />
           <div className={styles.counter}>2</div>
         </div>
       </div>

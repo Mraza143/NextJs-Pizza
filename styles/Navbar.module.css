@@ -8,7 +8,10 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    background-color: white;
+    background-color: black;
+
+
+
   }
   
   .item {
@@ -18,7 +21,8 @@
   }
   
   .item:nth-child(2) {
-    flex: 3;
+    flex: 1;
+    margin-left: 3rem;
   }
   
   .item:last-child {

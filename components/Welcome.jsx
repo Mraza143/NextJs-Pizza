@@ -28,8 +28,8 @@ const Welcome = () => {
     <div className={styles.hello1} >
         <p  className={styles.text} >Home</p>
     <p  className={styles.text} >Menu</p>
-    <p  className={styles.text} >Catering</p>
-    <p  className={styles.text} >Location</p></div>
+    <p  className={styles.text} >Branches</p>
+    <p  className={styles.text} >Deals</p></div>
     <div className={styles.arrowContainer} style={{ left: 0 }} onClick={()=>handleArrow()}>
         <Image src="/arrowl.png" alt="" layout="fill" objectFit="contain"/>
       </div>

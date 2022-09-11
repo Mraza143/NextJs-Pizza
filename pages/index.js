@@ -23,7 +23,7 @@ export default function Home() {
       <Pizzas/>
 
       <SpecialDeal/>
-      <Footer/>
+
 
       
     </div>
