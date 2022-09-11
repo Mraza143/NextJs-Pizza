@@ -6,6 +6,10 @@
   .desc , .choose{
     color: black;
   }
+  .choose{
+    background-color: white;
+    color: black;
+  }
   
   .left {
     flex: 1;
@@ -72,6 +76,8 @@
   .ingredients {
     display: flex;
     margin-bottom: 30px;
+    background-color: white;
+    color: black;
   }
   
   .option {
@@ -86,11 +92,15 @@
   .checkbox {
     width: 20px;
     height: 20px;
+    background-color: white;
+    color: black;
   }
   
   .quantity {
     width: 50px;
     height: 30px;
+    background-color: white;
+    color: black;
   }
   
   .button {

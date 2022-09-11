@@ -1,8 +1,14 @@
 import Image from "next/image";
 import styles from "../styles/Welcome.module.css";
 import { useState } from "react";
+import { useSelector } from "react-redux";
+import Link from "next/link";
+
+
+
 
 const Welcome = () => {
+  const quantity = useSelector((state) => state.cart.quantity);
   const [index, setIndex] = useState(0);
   const handleArrow = () =>{
     if(index==2){
@@ -26,10 +32,18 @@ const Welcome = () => {
     <img src="/pizzalo1.jpg" alt="" />
     </div>
     <div className={styles.hello1} >
-        <p  className={styles.text} >Home</p>
+      <div className={styles.midmid}>
+    <p  className={styles.text} >Home</p>
     <p  className={styles.text} >Menu</p>
     <p  className={styles.text} >Branches</p>
-    <p  className={styles.text} >Deals</p></div>
+    <p  className={styles.text} >Deals</p>
+    </div>
+    <div className={styles.cart}>
+          <Image src="/cart.png" alt="" width="30px" height="30px" />
+          <div className={styles.counter}>{quantity}</div>
+        </div>
+    </div>
+
     <div className={styles.arrowContainer} style={{ left: 0 }} onClick={()=>handleArrow()}>
         <Image src="/arrowl.png" alt="" layout="fill" objectFit="contain"/>
       </div>

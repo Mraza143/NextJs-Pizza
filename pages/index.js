@@ -6,9 +6,9 @@ import Welcome from '../components/Welcome'
 import styles from '../styles/Home.module.css'
 import Pizzas from '../components/Pizzas'
 import Menu from '../components/Menu'
-import Footer from '../components/Footer'
+import axios from 'axios'
 
-export default function Home() {
+export default function Home({pizzas}) {
   return (
     <div className={styles.container}>
        <Head>
@@ -17,15 +17,24 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Welcome/>
-      <Branches/>
-      
+      <Branches/>      
       <Menu/>
-      <Pizzas/>
-
+      <Pizzas pizzas={pizzas}/>
       <SpecialDeal/>
 
 
       
     </div>
-  )
+  );
 }
+
+export const getServerSideProps = async (ctx) => {
+
+
+  const res = await axios.get("http://localhost:3000/api/pizzas");
+  return {
+    props: {
+      pizzas: res.data,
+    },
+  };
+};
