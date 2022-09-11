@@ -4,7 +4,12 @@
     flex-direction: column;
     align-items: center;
     background-color: rgb(240, 240, 220);
+    
 
+  }
+  .extras{
+    width: 10rem;
+    background-color: aliceblue;
   }
   
   .desc {
