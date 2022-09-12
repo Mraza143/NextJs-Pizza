@@ -5,7 +5,7 @@ import LocationCard from "./LocationCard";
 const Branches = () => {
   return (
 
-    <div className={styles.container}>
+    <div className={styles.container} id="branches">
     <h1 className={styles.title}>OUR BRANCHES</h1>
    
     <div className={styles.wrapper}>

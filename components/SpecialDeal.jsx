@@ -3,7 +3,7 @@ import styles from "../styles/SpecialDeal.module.css";
 const SpecialDeal = () => {
   return (
 
-        <section className={styles.container}>
+        <section className={styles.container} id="deals">
            <div className={styles.uppertext}>
             <h2>Special Offers</h2>
            

@@ -122,7 +122,16 @@ const Index = ({ orders, pizzas }) => {
 };
 
 export const getServerSideProps = async (ctx) => {
+  const myCookie = ctx.req?.cookies || "";
 
+  if (myCookie.token !== process.env.TOKEN) {
+    return {
+      redirect: {
+        destination: "/admin/login",
+        permanent: false,
+      },
+    };
+  }
   const productRes = await axios.get("http://localhost:3000/api/pizzas");
   const orderRes = await axios.get("http://localhost:3000/api/orders");
 

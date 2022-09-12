@@ -1,7 +1,9 @@
+
+import styles from "../../styles/Login.module.css";
+
 import axios from "axios";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import styles from "../../styles/Login.module.css";
 
 const Login = () => {
   const [username, setUsername] = useState(null);

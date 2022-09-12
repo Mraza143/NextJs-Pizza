@@ -7,6 +7,7 @@ import { reset } from "../../redux/cartSlice";
 import { PayPalButton } from "react-paypal-button-v2";
 import axios from "axios";
 import { useRouter } from "next/router";
+import Link from "next/link";
 import OrderDetail from "../../components/OrderDetail";
 
 
@@ -118,12 +119,14 @@ const Cart = () => {
           </div>
           { (
             <div className={styles.paymentMethods}>
+              <Link href="/payment" passHref>
               <button
                 className={styles.payButton}
-                onClick={() => setCash(true)}
+                
               >
                 CASH ON DELIVERY
               </button>
+              </Link>
               {scriptLoaded ? (
             <PayPalButton
             

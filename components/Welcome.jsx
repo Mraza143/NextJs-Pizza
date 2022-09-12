@@ -34,15 +34,27 @@ const Welcome = () => {
     <div className={styles.hello1} >
       <div className={styles.midmid}>
     <p  className={styles.text} >Home</p>
-    <p  className={styles.text} >Menu</p>
+    <Link href="#menu" passHref>
+    <p  className={styles.text} >Menu</p></Link>
+    <Link href="#branches" passHref>
     <p  className={styles.text} >Branches</p>
+    </Link>
+    <Link href="#deals" passHref>
     <p  className={styles.text} >Deals</p>
+    </Link>
     </div>
+
+    
     <div className={styles.cart}>
+    <Link href="/cart" passHref>
           <Image src="/cart.png" alt="" width="30px" height="30px" />
+          </Link>
           <div className={styles.counter}>{quantity}</div>
+
         </div>
+
     </div>
+
 
     <div className={styles.arrowContainer} style={{ left: 0 }} onClick={()=>handleArrow()}>
         <Image src="/arrowl.png" alt="" layout="fill" objectFit="contain"/>

@@ -5,7 +5,7 @@ import { useState } from "react";
 const Menu = () => {
   return (
 
-        <div  className={styles.container}>
+        <div  className={styles.container} id="menu">
             <div className={styles.semitrans}></div>
 
     <div className={styles.midmenu}>
