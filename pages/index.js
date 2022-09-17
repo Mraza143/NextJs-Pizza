@@ -10,6 +10,7 @@ import AddButton from "../components/AddButton";
 import axios from 'axios'
 import { useState } from 'react'
 import AddPizza from '../components/AddPizza'
+import BranchesHeading from '../components/BranchesHeading'
 
 export default function Home({pizzas ,admin}) {
   const [close, setClose] = useState(true);
@@ -21,12 +22,13 @@ export default function Home({pizzas ,admin}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Welcome/>
-      <Branches/>      
+      <SpecialDeal/> 
       <Menu/>
       {<AddButton setClose={setClose} />}
       <Pizzas pizzas={pizzas}/>
       {!close && <AddPizza setClose={setClose} />}
-      <SpecialDeal/>
+      <BranchesHeading/>
+      <Branches/>
 
 
       
