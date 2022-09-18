@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/Welcome.module.css";
+import styles from "../../styles/Welcome.module.css";
 import { useState } from "react";
 
 const Menu = () => {

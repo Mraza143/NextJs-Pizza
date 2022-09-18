@@ -1,6 +1,6 @@
 import styles from "../../styles/Cart.module.css";
 import Image from "next/image";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/Layout/Navbar";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { reset } from "../../redux/cartSlice";

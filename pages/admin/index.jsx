@@ -1,7 +1,7 @@
 import axios from "axios";
 import Image from "next/image";
 import { useState } from "react";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/Layout/Navbar";
 import styles from "../../styles/Admin.module.css";
 
 const Index = ({ orders, pizzas }) => {

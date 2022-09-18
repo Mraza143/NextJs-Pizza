@@ -1,4 +1,4 @@
-import styles from "../styles/Branches.module.css";
+import styles from "../../styles/Branches.module.css";
 import LocationCard from "./LocationCard";
 
 

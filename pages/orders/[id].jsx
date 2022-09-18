@@ -1,7 +1,7 @@
 import styles from "../../styles/Orders.module.css";
 import Image from "next/image";
 import { useState } from "react";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/Layout/Navbar";
 import axios from "axios";
 
 

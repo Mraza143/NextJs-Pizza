@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/Navbar.module.css";
+import styles from "../../styles/Navbar.module.css";
 import { useSelector } from "react-redux";
 import Link from "next/link";
 
@@ -13,7 +13,7 @@ const Navbar = () => {
         </div>
         <div className={styles.texts}>
           <div className={styles.text}>ORDER NOW!</div>
-          <div className={styles.text}>012 345 678</div>
+          <div className={styles.text}>112 222 333</div>
         </div>
       </div>
       <div className={styles.item}>

@@ -1,16 +1,16 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Branches from '../components/Branches'
+import Branches from '../components/Home/Branches'
 import SpecialDeal from '../components/SpecialDeal'
-import Welcome from '../components/Welcome'
+import Welcome from '../components/Home/Welcome'
 import styles from '../styles/Home.module.css'
 import Pizzas from '../components/Pizzas'
-import Menu from '../components/Menu'
+import Menu from '../components/Home/Menu'
 import AddButton from "../components/AddButton";
 import axios from 'axios'
 import { useState } from 'react'
 import AddPizza from '../components/AddPizza'
-import BranchesHeading from '../components/BranchesHeading'
+import BranchesHeading from '../components/Home/BranchesHeading'
 
 export default function Home({pizzas ,admin}) {
   const [close, setClose] = useState(true);

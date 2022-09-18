@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/Welcome.module.css";
+import styles from "../../styles/Welcome.module.css";
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import Link from "next/link";
