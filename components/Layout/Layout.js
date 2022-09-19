@@ -1,5 +1,5 @@
 
-import Footer from "./Layout/Footer";
+import Footer from "./Footer";
 
 
 
